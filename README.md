@@ -1,5 +1,4 @@
-<<<<<<< Updated upstream
-# Convolution_and_maxpool_from_scratch_using_numpy
+# Convolution_and_maxpool_using_numpy
 
 
 Convolution is an operation commonly used in machine learning that involves "sliding" a small filter (a matrix of numbers) over a larger input matrix and computing a dot product between the two matrices at each position. This process creates a new output matrix that summarizes how the input matrix features match the filter pattern.
@@ -151,5 +150,4 @@ ________________________________________________________________________________
 1. https://towardsdatascience.com/a-comprehensive-introduction-to-different-types-of-convolutions-in-deep-learning-669281e58215
 
 =======
-## Convolution_and_maxpool_from_scratch_using_numpy
->>>>>>> Stashed changes
+
