@@ -4,7 +4,8 @@ Convolution is an operation commonly used in machine learning that involves "sli
 
 Let's understand the Convolution operation on 2d images through this example
 
-![Example GIF](https://miro.medium.com/v2/resize:fit:1070/1*Zx-ZMLKab7VOCQTxdZ1OAw.gif)
+![Example GIF](https://miro.medium.com/v2/resize:fit:1070/1*Zx-ZMLKab7VOCQTxdZ1OAw.gif align='left')
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/99056351/219140971-a662bc34-12bb-472d-8452-092e78a63bc7.png" align = 'right'>
 
 Now let's write code for it and check the output
 
@@ -62,7 +63,7 @@ def convolution_operation_2D_Image(input_image, kernel, stride, pad):
 
 If we call our function and perform the convolution overation on the above image we get the following ouput
 
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/99056351/219140971-a662bc34-12bb-472d-8452-092e78a63bc7.png" align = 'right'>
+
 
 ### Voila, 2d Convolutions are working
 
