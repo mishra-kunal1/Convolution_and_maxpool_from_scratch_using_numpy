@@ -141,3 +141,11 @@ Here's the output we get after running the code
 <img width="532" alt="image" src="https://user-images.githubusercontent.com/99056351/219207491-9fc7ce18-340d-403d-99b8-023e6613b0c8.png">
 
 
+________________________________________________________________________________________________________________________________________
+#### Future Works
+1. Implementing Backpropagation on Convolutional and Maxpool layers from Scratch
+
+_______________________________________________________________________________________________________________________________________
+#### References
+1. https://towardsdatascience.com/a-comprehensive-introduction-to-different-types-of-convolutions-in-deep-learning-669281e58215
+2. deeplearning.ai
