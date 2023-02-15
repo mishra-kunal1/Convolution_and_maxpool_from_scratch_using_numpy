@@ -6,11 +6,12 @@ Convolution is an operation commonly used in machine learning that involves "sli
 Following methods have been implemented in this repository from scratch
 1. Convolution Operation on a single 2d image using a single filter.
 2. Convolution Operation on a single 3d (RGB) image using a single filter.
-3. Convolution Operation on a batch of RGB images using multiple filters and getting same 
+3. Maxpool operation on a batch of RGB images.
+4. Convolution Operation on a batch of RGB images using multiple filters  
 ```diff 
-results as Tensorflow's output of Conv2d layer
+- The results are same as Tensorflow's output of Conv2d layer.
 ```
-6. Maxpool operation on a batch of RGB images.
+
 
 __________________________________________________________________________________________________________________________________________
 
