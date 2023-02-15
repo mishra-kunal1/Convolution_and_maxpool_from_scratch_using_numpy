@@ -68,7 +68,7 @@ If we call our function and perform the convolution overation on the above image
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
-## Convolution operation on RGB Images and using a single filter - Input shape =height x width x num_channels
+## Convolution operation on single RGB Image and using a single filter 
 
 ![image](https://user-images.githubusercontent.com/99056351/219204102-a086ab29-df83-4f0e-9eff-6da7671995ce.png)
 
