@@ -8,7 +8,7 @@ Following methods have been implemented in this repository from scratch
 2. Convolution Operation on a single 3d (RGB) image using a single filter.
 3. Convolution Operation on a batch of RGB images using multiple filters and getting same 
 ```diff 
-- results as Tensorflow's output of Conv2d layer
+results as Tensorflow's output of Conv2d layer
 ```
 6. Maxpool operation on a batch of RGB images.
 
