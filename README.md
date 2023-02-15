@@ -1,6 +1,13 @@
 # Convolution_and_maxpool_from_scratch_using_numpy
 
+
 Convolution is an operation commonly used in machine learning that involves "sliding" a small filter (a matrix of numbers) over a larger input matrix and computing a dot product between the two matrices at each position. This process creates a new output matrix that summarizes how the input matrix features match the filter pattern.
+
+Following methods have been implemented in this repository from scratch
+1. Convolution Operation on a single 2d image using a single filter.
+2. Convolution Operation on a single 3d (RGB) image using a single filter.
+3. Convolution Operation on a batch of RGB images using multiple filters and getting <span style="color:red; font-weight:bold;">same results as Tensorflow's output of Conv2d layer</span>.
+4. Maxpool operation on a batch of RGB images.
 
 Let's understand the Convolution operation on 2d images through this example
 
