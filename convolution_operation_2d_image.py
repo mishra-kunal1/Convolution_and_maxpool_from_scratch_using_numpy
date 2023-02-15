@@ -1,5 +1,4 @@
 import numpy as np
-import conv_step
 
 def convolution_operation_2D_Image(input_image, kernel, stride, pad):
     """
@@ -42,7 +41,8 @@ def convolution_operation_2D_Image(input_image, kernel, stride, pad):
             image_patch = padded_image[h_start:h_end, w_start:w_end]
             
             # Perform a convolution step on the image patch and the kernel
-            final_output[h, w] = conv_step(image_patch, kernel)
+            #element wise multiplication of two similar sized matrix and taking elementwise sum of resultant matrix
+            final_output[h, w] = np.sum(np.multiply(image_patch, kernel))
     
     # Return the final output array
     return final_output

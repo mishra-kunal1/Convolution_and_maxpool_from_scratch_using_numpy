@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 # Convolution_and_maxpool_from_scratch_using_numpy
 
 
@@ -149,3 +150,6 @@ ________________________________________________________________________________
 #### References
 1. https://towardsdatascience.com/a-comprehensive-introduction-to-different-types-of-convolutions-in-deep-learning-669281e58215
 
+=======
+## Convolution_and_maxpool_from_scratch_using_numpy
+>>>>>>> Stashed changes

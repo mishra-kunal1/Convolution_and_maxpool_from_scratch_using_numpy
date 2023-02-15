@@ -1,8 +1,9 @@
 import tensorflow as tf
+from tensorflow.keras.layers import Conv2D
 import numpy as np
 import convolution_operation_batch_3D_images
+np.random.seed(1)
 
-from tensorflow.keras.layers import Conv2D
 
 # Generate random data
 ## 4 random RGB images of size 9x9x3

@@ -1,4 +1,5 @@
 import numpy as np
+
 def max_pool_batch_3D_images(input_images_batch,filter_size,stride):
      
     batch_size, input_height, input_width, input_channels = input_images_batch.shape

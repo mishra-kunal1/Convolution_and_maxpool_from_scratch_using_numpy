@@ -1,9 +1,11 @@
+import numpy as np
+
 def convolution_operation_3D_Image(input_image, kernel, stride, pad):
     """
     Performs a 3D convolution operation on a given input_image with a given kernel.
 
     Args:
-    input_image (numpy array): a 3D array representing the input image
+    input_image (numpy array): a 3D array representing the input image 
     kernel (numpy array): a 3D array representing the weights used for the convolution
     stride (int): the stride used for the convolution operation
     pad (int): the amount of zero padding to be added to the input image
@@ -42,7 +44,8 @@ def convolution_operation_3D_Image(input_image, kernel, stride, pad):
                 image_patch = padded_image[h_start:h_end, w_start:w_end, c:c+1]
                 
                 # Perform a convolution step on the image patch and the kernel for the current channel
-                final_output[h, w, c] = conv_step(image_patch, kernel[:,:,c:c+1])
+                #element wise multiplication of two similar sized matrix and taking element wise sum of resultant matrix
+                final_output[h, w, c] = np.sum(np.multiply(image_patch, kernel[:,:,c:c+1]))
     
     # Return the final output array
     return final_output

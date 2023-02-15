@@ -1,6 +1,5 @@
 import numpy as np
 
-
 def convolution_operation_batch_3D_images(input_images_batch, kernel, stride, pad):
     """
     Perform 2D convolution operation on a batch of 3D input images with a given kernel.
@@ -51,6 +50,7 @@ def convolution_operation_batch_3D_images(input_images_batch, kernel, stride, pa
                 for c in range(num_filters):
                     # Extract the image patch and apply the convolution operation
                     image_patch = current_padded_image[h_start:h_end,w_start:w_end, :]
-                    final_output[index, h, w, c] = conv_step(image_patch, kernel[c:c+1,:,:,:])
+                     #element wise multiplication of two similar sized matrix and taking element wise sum of resultant matrix
+                    final_output[index, h, w, c] = np.sum(np.multiply(image_patch, kernel[c:c+1,:,:,:]))
                     
     return final_output
