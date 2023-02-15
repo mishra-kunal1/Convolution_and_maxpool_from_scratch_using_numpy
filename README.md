@@ -85,6 +85,8 @@ def convolution_operation_2D_Image(input_image, kernel, stride, pad):
 The input layer and the filter have the same depth (channel number = kernel number). The 3D filter moves only in 2-direction, height & width of the image (That’s why such operation is called as 2D convolution although a 3D filter is used to process 3D volumetric data). At each sliding position, we perform element-wise multiplication and addition, which results in a single number. In the example shown below, the sliding is performed at 5 positions horizontally and 5 positions vertically. Overall, we get a single output channel.
 The code convolution operation for a single image using a single kernel is in convolution_operation_3d(RGB)_image.py
 
+____________________________________________________________________________________________________________________________________________
+
 ### 3. Convolution operation in batch of RGB images using multiple filters
 
 While writing code in Tensorflow or Pytorch we perform the convolution operations on a batch of images. The input given is is the form batch_size x height_image x width_image x num_channels whereas the kernerl_input is given in the form num_filters x filter_size X filter_size x filter_channels.
