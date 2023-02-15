@@ -62,7 +62,7 @@ def convolution_operation_2D_Image(input_image, kernel, stride, pad):
 
 If we call our function and perform the convolution overation on the above image we get the following ouput
 
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/99056351/219140971-a662bc34-12bb-472d-8452-092e78a63bc7.png", align = 'right'>
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/99056351/219140971-a662bc34-12bb-472d-8452-092e78a63bc7.png" align = 'right'>
 
 ### Voila, 2d Convolutions are working
 
