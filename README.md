@@ -1,4 +1,4 @@
-# Convolution_and_maxpool_using_numpy
+# Convolution_and_maxpool__layers_using_numpy
 
 
 Convolution is an operation commonly used in machine learning that involves "sliding" a small filter (a matrix of numbers) over a larger input matrix and computing a dot product between the two matrices at each position. This process creates a new output matrix that summarizes how the input matrix features match the filter pattern.
