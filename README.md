@@ -9,7 +9,7 @@ Following methods have been implemented in this repository from scratch
 3. Maxpool operation on a batch of RGB images.
 4. Convolution Operation on a batch of RGB images using multiple filters  
 ```diff 
-- The results are same as Tensorflow's output of Conv2d layer.
+- The results we get from custom opeartions are same as Tensorflow's output of Conv2d layer
 ```
 
 
