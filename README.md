@@ -9,7 +9,9 @@ Following methods have been implemented in this repository from scratch
 3. Maxpool operation on a batch of RGB images.
 4. Convolution Operation on a batch of RGB images using multiple filters  
 ```diff 
-- The results we get from custom opeartions are same as Tensorflow's output of Conv2d layer
+- The results we get from custom opeartions are same as Tensorflow's and Pytorch's output of Conv2d layer. To check the results run the folllowing commands
+- python tensorflow_test.py
+- python pytorch_test.py
 ```
 
 
@@ -87,7 +89,7 @@ def convolution_operation_2D_Image(input_image, kernel, stride, pad):
 ![image](https://user-images.githubusercontent.com/99056351/219204102-a086ab29-df83-4f0e-9eff-6da7671995ce.png)
 
 The input layer and the filter have the same depth (channel number = kernel number). The 3D filter moves only in 2-direction, height & width of the image (That’s why such operation is called as 2D convolution although a 3D filter is used to process 3D volumetric data). At each sliding position, we perform element-wise multiplication and addition, which results in a single number. In the example shown below, the sliding is performed at 5 positions horizontally and 5 positions vertically. Overall, we get a single output channel.
-The code convolution operation for a single image using a single kernel is in convolution_operation_3d(RGB)_image.py
+The code convolution operation for a single image using a single kernel is in 3d_convolution.py
 
 ____________________________________________________________________________________________________________________________________________
 
@@ -107,32 +109,34 @@ import tensorflow as tf
 from tensorflow.keras.layers import Conv2D
 import numpy as np
 
-# Set random seed for reproducibility
-np.random.seed(1)
 
+np.random.seed(1)
 # Generate random data
 ## 4 random RGB images of size 9x9x3
-input_image_batch = np.random.randn(4, 9, 9, 3).astype(np.float32)
-kernel = np.random.randn(8, 5, 5, 3).astype(np.float32)
+input_image_batch = np.random.rand(4, 9, 9, 3).astype(np.float32)
+kernel = np.random.rand(8, 5,5 ,3).astype(np.float32)
 
-# Apply custom convolution operation to input images
-output_custom = convolution_operation_batch_3D_images(input_image_batch, kernel, stride=1, pad=2)
+# Apply custom convolution_operation_batch_3D_images
+
+output_custom =convolution_operation_batch_3D_images(input_image_batch,kernel,stride=1, pad=2)
 print('Output shape of custom convolution')
 print(output_custom.shape)
 
-# Apply TensorFlow's Conv2D layer to input images
-init = tf.constant_initializer(kernel.transpose(1, 2, 3, 0))
-conv_layer = Conv2D(filters=8, kernel_size=5, strides=1, padding='same', use_bias=False, kernel_initializer=init)
+
+# Apply TensorFlow's Conv2D layer
+init=tf.constant_initializer(kernel.transpose(1,2,3,0))
+
+conv_layer = Conv2D(filters=8, kernel_size=5, strides=1, padding='same', use_bias=False,kernel_initializer=init)
+
 output_tensorflow = conv_layer(tf.constant(input_image_batch))
 output_tensorflow = output_tensorflow.numpy()
-print('Output shape of TensorFlow convolution')
+print('Output shape of tensorflow convolution')
 print(output_tensorflow.shape)
-
-# Compare outputs of custom and TensorFlow's convolution
-print('*' * 50)
-assert np.allclose(np.round(output_tensorflow, 2), np.round(output_custom, 2), rtol=1e-5, atol=1e-8)
+# Compare outputs
+print('*'*50)
+assert np.allclose(np.round(output_tensorflow,2), np.round(output_custom,2), rtol=1e-5, atol=1e-8)
 print("Outputs of both methods are the same")
-print('*' * 50)
+print('*'*50)
 
 
 ```

@@ -1,7 +1,7 @@
 import tensorflow as tf
 from tensorflow.keras.layers import Conv2D
 import numpy as np
-import convolution_operation_batch_3D_images
+import batch_convolution
 np.random.seed(1)
 
 
@@ -12,10 +12,10 @@ kernel = np.random.randn(8, 5,5 ,3).astype(np.float32)
 
 # Apply convolution_operation_batch_3D_images
 
-output_custom =convolution_operation_batch_3D_images(input_image_batch,kernel,stride=1, pad=2)
+output_custom =batch_convolution.convolution_operation_batch_3D_images(input_image_batch,kernel,stride=1, pad=2)
 print('Output shape of custom convolution')
 print(output_custom.shape)
-
+pyth
 
 # Apply TensorFlow's Conv2D layer
 init=tf.constant_initializer(kernel.transpose(1,2,3,0))
