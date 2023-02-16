@@ -9,7 +9,8 @@ Following methods have been implemented in this repository from scratch
 3. Maxpool operation on a batch of RGB images.
 4. Convolution Operation on a batch of RGB images using multiple filters  
 ```diff 
-- The results we get from custom opeartions are same as Tensorflow's and Pytorch's output of Conv2d layer. To check the results run the folllowing commands
+- The results we get from custom opeartions are same as Tensorflow's and Pytorch's output of Conv2d layer. 
+- To check the results run the folllowing commands
 - python tensorflow_test.py
 - python pytorch_test.py
 ```
