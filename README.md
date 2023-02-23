@@ -109,7 +109,7 @@ Following code compare the output  after applying Tensorflow's Convolution 2D la
 import tensorflow as tf
 from tensorflow.keras.layers import Conv2D
 import numpy as np
-
+import batch_convolution
 
 np.random.seed(1)
 # Generate random data
@@ -119,7 +119,7 @@ kernel = np.random.rand(8, 5,5 ,3).astype(np.float32)
 
 # Apply custom convolution_operation_batch_3D_images
 
-output_custom =convolution_operation_batch_3D_images(input_image_batch,kernel,stride=1, pad=2)
+output_custom =batch_convolution.convolution_operation_batch_3D_images(input_image_batch,kernel,stride=1, pad=2)
 print('Output shape of custom convolution')
 print(output_custom.shape)
 
