@@ -101,7 +101,7 @@ While writing code in Tensorflow or Pytorch we perform the convolution operation
 The output we get after these operations is (batch_size x output_height x output_width x filter_channels)
 
 We always perform 2D convolution operation on a batch of 3D input images with a given kernel.
-The code for Convolution operation in batch of RGB images using multiple filters is in convolution_operation_batch_of_3d_images.py 
+The code for Convolution operation in batch of RGB images using multiple filters is in [batch_convolution.py](https://github.com/mishra-kunal1/Convolution_and_maxpool_from_scratch_using_numpy/blob/main/batch_convolution.py)
 
 Following code compare the output  after applying Tensorflow's Convolution 2D layers and Custom function for a batch of input images.
 
