@@ -90,7 +90,7 @@ def convolution_operation_2D_Image(input_image, kernel, stride, pad):
 ![image](https://user-images.githubusercontent.com/99056351/219204102-a086ab29-df83-4f0e-9eff-6da7671995ce.png)
 
 The input layer and the filter have the same depth (channel number = kernel number). The 3D filter moves only in 2-direction, height & width of the image (That’s why such operation is called as 2D convolution although a 3D filter is used to process 3D volumetric data). At each sliding position, we perform element-wise multiplication and addition, which results in a single number. In the example shown below, the sliding is performed at 5 positions horizontally and 5 positions vertically. Overall, we get a single output channel.
-The code convolution operation for a single image using a single kernel is in 3d_convolution.py
+The code convolution operation for a single image using a single kernel is in [3d_convolution.py](https://github.com/mishra-kunal1/Convolution_and_maxpool_from_scratch_using_numpy/blob/main/3d_convolution.py)
 
 ____________________________________________________________________________________________________________________________________________
 
